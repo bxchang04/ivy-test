@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display default message on test component', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('ivy-test app is running!');
+    expect(page.getTitleText()).toEqual('test works!');
   });
 
   afterEach(async () => {
