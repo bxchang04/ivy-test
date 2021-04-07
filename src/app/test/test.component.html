@@ -1,19 +1,33 @@
 <p>test works!</p>
 
 <!-- Begin: Status filter buttons -->
-<!--<mat-button-toggle-group name="status">-->
+<mat-button-toggle-group name="status">
 
-<!--  <mat-button-toggle-->
-<!--    (click)="status = 'view1'"-->
-<!--    #view1-->
-<!--    id="view1"-->
-<!--    class="status-filter-btn active"-->
-<!--    mat-raised-button color="primary">-->
-<!--    View1-->
-<!--  </mat-button-toggle>-->
+  <mat-button-toggle
+    (click)="status = 'view1'"
+    #view1
+    id="view1"
+    class="status-filter-btn active"
+    mat-raised-button color="primary">
+    View1
+  </mat-button-toggle>
+  <mat-button-toggle
+    (click)="status = 'view2'"
+    #view2
+    id="view2"
+    class="status-filter-btn active"
+    mat-raised-button color="primary">
+    View2
+  </mat-button-toggle>
 
-<!--</mat-button-toggle-group>-->
+</mat-button-toggle-group>
 <!-- End: Status filter buttons -->
+
+<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+  <mat-button-toggle value="bold">Bold</mat-button-toggle>
+  <mat-button-toggle value="italic">Italic</mat-button-toggle>
+  <mat-button-toggle value="underline">Underline</mat-button-toggle>
+</mat-button-toggle-group>
 
 <button mat-icon-button [matMenuTriggerFor]="actionsMenu">
   <mat-icon class="actions-btn blue-icon">more_vert</mat-icon>

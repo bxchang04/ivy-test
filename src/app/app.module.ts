@@ -13,7 +13,7 @@ import {TestModule} from './test/test.module';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    TestModule
+    TestModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
